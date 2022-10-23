@@ -1,0 +1,292 @@
+html{
+   scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFCEF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+   width: 1110px; 
+   margin: 0 auto;
+}
+ 
+section{
+   padding-top: 120px;
+ }
+
+ h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    color: #000000;
+    margin: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;  
+    margin: 0;
+ }
+
+p{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    line-height: 24.71px;
+}
+
+/*1 block*/
+.header{
+    padding-top: 60px;
+}
+
+.logo{
+    display: block;
+    flex-direction: row;
+    padding: 0px;
+    gap: 10px;
+    width: 182px;
+    height: 30px;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding-top: 82px;
+}
+
+.kow{
+    width: 465px;
+    height: 465px; 
+}
+
+.offer {
+    width: 465px;
+    height: 389px;
+}
+
+
+ .textoffer {
+    padding: 30px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+ }
+
+ .button{
+    display: block;
+    width: 227px;
+    height: 69px;
+    background: #FF6861;
+    border-radius: 100px;
+    text-decoration: none;
+    padding: 22px 70px;
+    font-size: 18px;
+    color: #FFFFFF;
+    align-items: center;
+    transition: all 0.5s ease;
+ } 
+
+ .button:hover{
+   background: #fb7e84;
+ }
+
+ /* block 2 */
+ .block2{
+    align-items: center;
+    gap: 41px;
+ }
+
+ .text2{
+    margin-bottom: 70px;
+    text-align: center;
+ }
+
+ .lists{
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 720px;
+    margin: 0 auto;
+ }
+
+ .block2text p{
+    padding-top: 11px;
+ }
+
+ .list {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 34px;
+     }
+
+.list img{
+    width: 73px;
+}
+
+ /*3 block */
+ 
+ .ladybug-container{
+    display: flex;
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+   padding: 76px 125px 75px 122px;
+   align-items: center;
+ }
+
+ .text3 {
+    width: 475px;
+    margin-right: 101px;
+ }
+  .text3 p{
+   width: 371px;
+   padding-top: 24px;
+   padding-bottom: 24px;
+  }
+
+ .ladybug{
+    width: 287px;
+    height: 287px;
+    animation: 5s linear 0s normal none infinite running rot;
+ }
+ @keyframes rot {
+   0% {
+       transform: rotate(0deg);
+   }
+
+   100% {
+       transform: rotate(360deg);
+   }
+}
+
+ /* footer*/
+ .footer{
+    padding-top: 120px;
+    padding-bottom: 120px;
+ }
+ .credits{
+   font-weight: 500;
+   font-size: 15px;
+   text-align: center;
+ }
+
+ /* Responsive*/
+
+ /* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+   .container {
+       max-width: 960px;
+   }
+   .logo {
+      margin: 0 auto;
+   }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+   .container {
+       max-width: 720px;
+   }
+   .logo {
+      margin: 0 auto;
+   }
+   .wrapper {
+      flex-direction: column;
+      flex-flow: column-reverse;
+      text-align: center;
+      gap: 51px;
+   }
+   .button{
+      margin: 0 auto;
+      }
+
+   .ladybug-container{
+      flex-direction: column;
+      flex-flow: column-reverse;
+      padding: 101px 0;
+   }
+   .text3 {
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 101px;
+   }
+   .text3 p{
+      margin: 0 auto;
+   }
+  
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+   .container {
+       max-width: 540px;
+   }
+   header{
+      margin: 0 auto;
+   }
+   .lists{
+      width: auto;
+      height: auto;
+   }
+   .list {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+   .container {
+       padding: 0 15px;
+       max-width: 320px;
+   }
+   .kow{
+      width: 320px;
+      height: 320px;
+   }
+   .offer{
+      width: 320px;
+      height: auto;
+   }
+   section {
+      padding-top: 90px;
+   }
+   .footer{
+      padding: 90px 0;
+   }
+   .ladybug{
+      width: 201px;
+      height: 201px;
+   }
+   .text3 {
+      width: 280px;
+      padding-top: 50px;
+   }
+   .text3 p{
+      width: 280px;
+   }
+   .ladybug-container{
+      padding: 70px 0;
